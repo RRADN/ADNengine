@@ -25,26 +25,6 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
     include_directories(${SDL3_IMAGE_INCLUDE_DIR}) 
 endif()
 
-set(GENERATOR_SCRIPTS
-    ${CMAKE_SOURCE_DIR}src/scripts/generator.py
-)
-
-add_custom_command(
-    OUTPUT
-        ${CMAKE_SOURCE_DIR}/src/core/ids/generated.cpp
-        ${CMAKE_SOURCE_DIR}/src/core/paths/generated.hpp
-
-    COMMAND
-        ${Python3_EXECUTABLE} ${GENERATOR_SCRIPT}
-
-    DEPENDS
-        ${GENERATOR_SCRIPT}
-
-    COMMENT "Generating assets..."
-
-    VERBATIM
-)
-
 add_executable(${PROJECT_NAME}
     #
     src/main.cpp
@@ -74,6 +54,20 @@ add_executable(${PROJECT_NAME}
     src/logic/input/inputManager.cpp
     src/logic/input/keysManager.cpp
 )
+
+#script execute
+add_custom_target(generate_assets ALL
+    COMMAND
+        ${Python3_EXECUTABLE}
+        ${CMAKE_SOURCE_DIR}/src/scripts/generator.py
+
+    WORKING_DIRECTORY
+        ${CMAKE_SOURCE_DIR}
+
+    COMMENT "Generating asset files..."
+)
+
+add_dependencies(${PROJECT_NAME} generate_assets)
 
 #memory leak detector
 if(CMAKE_BUILD_TYPE STREQUAL "Debug")
