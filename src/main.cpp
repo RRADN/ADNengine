@@ -14,6 +14,4 @@ int main() {
         render.draw(ScreensID::Adn_white);
         window.present();
     }
-
-
 }

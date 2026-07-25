@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="ADNengineBlack.svg"
+   inkscape:export-filename="ADNengine.png"
+   inkscape:export-xdpi="16.605406"
+   inkscape:export-ydpi="16.605406"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="true"
+     showguides="true"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="239.7092"
+     inkscape:cy="555.07882"
+     inkscape:window-width="1920"
+     inkscape:window-height="1054"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g21"
+     inkscape:export-bgcolor="#000000ff">
+    <inkscape:grid
+       id="grid11"
+       units="mm"
+       originx="0"
+       originy="0"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       enabled="true"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect16"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1" />
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <g
+       id="g21">
+      <text
+         xml:space="preserve"
+         style="font-size:98.6095px;writing-mode:lr-tb;direction:ltr;fill:#f9f9f9;stroke-width:1.32067"
+         x="64.839226"
+         y="182.73558"
+         id="text3"
+         transform="scale(1.1075121,0.90292468)"
+         inkscape:export-filename="text3.png"
+         inkscape:export-xdpi="270.9332"
+         inkscape:export-ydpi="270.9332"
+         inkscape:label="DN"><tspan
+           id="tspan3"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:98.6095px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Bold';stroke-width:1.32067;fill:#f9f9f9"
+           x="64.839226"
+           y="182.73558"
+           sodipodi:role="line">DN</tspan></text>
+      <path
+         style="fill:#b3b3b3;stroke-width:1.00557"
+         d="m 15,34.999999 10.000006,1.3e-5 v 12.999997 c 0,0 0,8.666666 15.081702,8.666654 25.092799,-2.2e-5 25.092799,17.33333 25.092799,17.33333 v 8.666664 c 0,0 4e-6,17.333298 -25.087249,17.333328 -15.087252,1e-5 -15.087252,17.333345 -15.087252,17.333345 l -5e-6,30.33334 c 0,0 -0.162671,17.33333 14.999991,17.33333 25.101412,0 25.011839,17.33333 25.011839,17.33333 l 0.05272,8.72235 c 0,0 0.109957,17.27765 -24.890635,17.27765 -15.173918,0 -15.173918,8.66665 -15.173918,8.66665 v 13.00001 H 14.99999 L 15,216.9437 c 0,0 10e-6,-17.27705 24.999978,-17.27705 15.000013,0 15.000013,-8.66665 15.000013,-8.66665 v -8.66667 c 0,0 0,-8.66666 -15.000013,-8.66666 -24.999973,4e-5 -24.999978,-26 -24.999978,-26 l 5e-6,-30.33335 c 0,0 0,-25.999999 24.999987,-25.999999 14.999989,1.5e-5 14.999989,-8.666653 14.999989,-8.666653 v -8.666664 c 0,0 1e-5,-8.666665 -14.999989,-8.666677 C 15,65.404983 15.00001,48.000009 15.00001,48.000009 Z"
+         id="path14-5"
+         sodipodi:nodetypes="cccsccsccscccccccsccscccccccc"
+         inkscape:label="grey" />
+      <path
+         style="fill:#f9f9f9;stroke-width:1.00557"
+         d="m 64.999987,34.999999 -10.000006,1.3e-5 1e-5,12.999997 c 0,0 -1e-5,8.666666 -14.907183,8.666654 -25.092803,-2.2e-5 -25.092803,17.33333 -25.092803,17.33333 v 8.666664 c 0,0 -5e-6,17.333308 25.087253,17.333328 14.912743,1.2e-5 14.912733,17.333345 14.912733,17.333345 v 30.33334 c 0,0 -1e-5,17.33333 -14.999999,17.33333 C 15,165 15.000005,182.33333 15.000005,182.33333 L 15,191 c 0,0 5e-6,17.33333 25.000576,17.33333 14.999405,0 14.999405,8.66665 14.999405,8.66665 v 13.00001 h 10.00001 l -4e-6,-13.00001 c 0,0 0,-17.33333 -24.999995,-17.33333 C 25.000006,199.66665 25.000006,191 25.000006,191 v -8.66667 c 0,0 0,-8.66666 14.999986,-8.66666 24.999995,4e-5 24.999995,-26 24.999995,-26 v -30.33335 c 0,0 0,-25.999999 -24.999995,-25.999999 -14.999986,1.5e-5 -14.999986,-8.666653 -14.999986,-8.666653 v -8.666664 c 0,0 0,-8.666685 14.999986,-8.666677 24.999995,1.2e-5 24.999995,-17.333318 24.999995,-17.333318 z"
+         id="path14"
+         sodipodi:nodetypes="cccsccsccscccccccsccscccccscc"
+         inkscape:label="black" />
+      <rect
+         style="fill:#b3b3b3;stroke-width:1.00557"
+         id="rect20"
+         width="18.333321"
+         height="8.6666651"
+         x="21.666677"
+         y="121.66669"
+         inkscape:label="greyjoint" />
+      <rect
+         style="fill:#f9f9f9;stroke-width:1.00557"
+         id="rect21"
+         width="18.324028"
+         height="8.6666536"
+         x="39.999985"
+         y="121.66669"
+         inkscape:label="blackjoint" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3471px;font-family:'JetBrainsMono Nerd Font Mono';-inkscape-font-specification:'JetBrainsMono Nerd Font Mono Bold';writing-mode:lr-tb;direction:ltr;fill:#f9f9f9;stroke-width:1.23157"
+         x="96.985695"
+         y="200.51213"
+         id="text21"
+         transform="scale(1.0741722,0.93094944)"
+         inkscape:label="engine"><tspan
+           sodipodi:role="line"
+           id="tspan21"
+           style="font-size:21.3471px;stroke-width:1.23157;fill:#f9f9f9"
+           x="96.985695"
+           y="200.51213">engine</tspan></text>
+    </g>
+  </g>
+</svg>

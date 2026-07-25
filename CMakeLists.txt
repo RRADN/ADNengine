@@ -36,13 +36,14 @@ add_executable(${PROJECT_NAME}
     src/platform/rendering/renderManager.cpp
     src/platform/rendering/textures/textureManager.cpp
     #entities
+    src/entities/primitive/entity.cpp
     #src/entities/ball.cpp
     #src/entities/paddle.cpp
     #maps
     #src/map/tileMap.cpp
     #logic collisions
-    #src/logic/systems/collisions/collision.cpp
-    #src/logic/systems/collisions/collisionManager.cpp
+    src/logic/systems/collisions/collision.cpp
+    src/logic/systems/collisions/collisionManager.cpp
     #logic movement     
     #src/logic/systems/movements/playerMovement.cpp
     #src/logic/systems/movements/movement.cpp
@@ -53,6 +54,25 @@ add_executable(${PROJECT_NAME}
     #input logic
     src/logic/input/inputManager.cpp
     src/logic/input/keysManager.cpp
+)
+
+#imgui
+set(IMGUI_DIR ${CMAKE_SOURCE_DIR}/external/imgui)
+
+target_sources(${PROJECT_NAME} PRIVATE
+
+    ${IMGUI_DIR}/imgui.cpp
+    ${IMGUI_DIR}/imgui_draw.cpp
+    ${IMGUI_DIR}/imgui_tables.cpp
+    ${IMGUI_DIR}/imgui_widgets.cpp
+
+    ${IMGUI_DIR}/backends/imgui_impl_sdl3.cpp
+    ${IMGUI_DIR}/backends/imgui_impl_sdlrenderer3.cpp
+)
+
+target_include_directories(${PROJECT_NAME} PRIVATE
+    ${IMGUI_DIR}
+    ${IMGUI_DIR}/backends
 )
 
 #script execute
