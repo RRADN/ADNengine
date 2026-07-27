@@ -1,6 +1,6 @@
 #pragma once 
 
-#include <SDL3/SDL_rect.h>
+#include "../../../core/dataTipes/rect.hpp"
 
 class Collision {
 public:
@@ -8,13 +8,13 @@ public:
     Collision(float x, float y, float width, float height);
     ~Collision() = default;
 
-    float getX() const { return x; }
-    float getY() const { return y; }
+    float getX() const { return rect.x; }
+    float getY() const { return rect.y; }
 
-    float getWidth() const { return width; }
-    float getHeight() const { return height; }
+    float getWidth() const { return rect.width; }
+    float getHeight() const { return rect.height; }
 
-    const SDL_FRect getRect();
+    const Rect getRect();
 
     void setXY(float x, float y);
     void setX(float x);
@@ -24,9 +24,5 @@ public:
     void setHeight(float height);
 
 private:
-    float x;
-    float y;
-    float width;
-    float height;
-    SDL_FRect rect;
+    Rect rect;
 };

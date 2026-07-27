@@ -1,11 +1,8 @@
 #include "textureMap.hpp"
-#include "texture.hpp"
 
-#include <unordered_map>
-#include <string>
+#include <stdexcept>
 
 #include <SDL3_image/SDL_image.h>
-#include <SDL3/SDL_render.h>
 
 template<typename ID>
 TextureMap<ID>::TextureMap(SDL_Renderer& renderer, const std::unordered_map<ID, std::string>& paths) {

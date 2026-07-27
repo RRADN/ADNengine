@@ -3,34 +3,33 @@
 Collision::Collision(){}
 
 Collision::Collision(float x, float y, float width, float height) {
-    this->x = x;
-    this->y = y;
-    this->width = width;
-    this->height = height;
+    this->rect.x = x;
+    this->rect.y = y;
+    this->rect.width = width;
+    this->rect.height = height;
 }
 
-const SDL_FRect Collision::getRect() {
-    rect = {x, y, width, height};
+const Rect Collision::getRect() {
     return rect;
 }
 
 void Collision::setXY(float x, float y){
-    this->x = x;
-    this->y = y;
+    this->rect.x = x;
+    this->rect.y = y;
 }
 
 void Collision::setX(float x){
-    this->x = x;
+    this->rect.x = x;
 }
 
 void Collision::setY(float y){
-    this->y = y;
+    this->rect.y = y;
 }
 
 void Collision::setWidth(float width) {
-    this->width = width;
+    this->rect.width = width;
 }
 
 void Collision::setHeight(float height) {
-    this->height = height;
+    this->rect.height = height;
 }

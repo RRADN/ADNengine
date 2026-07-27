@@ -16,7 +16,7 @@ const TexturesID Entity::getID() {
     return id;
 }
 
-const SDL_FRect Entity::getRect() {
+const Rect Entity::getRect() {
     return collision.getRect();
 }
 

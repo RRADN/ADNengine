@@ -11,7 +11,7 @@ public:
     Entity(Collision collision, TexturesID id);
     ~Entity() = default;
 
-    const SDL_FRect getRect();
+    const Rect getRect();
     const TexturesID getID();
     Collision* getCollision();
 

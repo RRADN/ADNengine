@@ -6,7 +6,8 @@ Render::Render(SDL_Renderer& renderer, SystemInputs& inputs, Resolution resoluti
     this->resolution = resolution;
 }
 
-void Render::draw(TexturesID id, const SDL_FRect& destRect) {
+void Render::draw(TexturesID id, const Rect& rect) {
+    SDL_FRect destRect = {rect.x, rect.y, rect.width, rect.height};
     SDL_RenderTexture(renderer, textures.textures.getTexure(id), nullptr, &destRect);
     if (inputs->debuging) {
         SDL_RenderTexture(renderer, textures.textures.getTexure(id), nullptr, &destRect);
@@ -20,24 +21,3 @@ void Render::draw(ScreensID id) {
        SDL_RenderTexture(renderer, textures.screens.getTexure(id), nullptr, &destRect);
     }
 }
-
-/*
-void Render::drawMap(std::vector<std::vector<Tile<TileID>>> tileMap) {
-    int i = 0;
-    for (auto& row : tileMap) {
-        for (int j = 0; j < 10; j++){
-            if (tileMap[i][j].isVisible()){
-                const SDL_FRect destRect = {tileMap[i][j].getX(),tileMap[i][j].getY(),
-                                        textures.tiles.getWidth(tileMap[i][j].getID()),
-                                        textures.tiles.getHeight(tileMap[i][j].getID())}; 
-                SDL_RenderTexture(renderer, textures.tiles.getTexure(tileMap[i][j].getID()), nullptr, &destRect);
-                if (inputs->debuging) {
-
-                }
-            }
-            
-        }
-        i++;
-    }
-}
-    */

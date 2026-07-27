@@ -8,18 +8,15 @@
 
 #include "../../core/config/resolution.hpp"
 
-//std
-#include <stdexcept>
-#include <vector>
+#include "../../core/dataTipes/rect.hpp"
 
 class Render{
 public:
     Render(SDL_Renderer& renderer, SystemInputs& inputs, Resolution resolution);
     ~Render() = default;
 
-    void draw(TexturesID id, const SDL_FRect& destRect);
+    void draw(TexturesID id, const Rect& rect);
     void draw(ScreensID id);
-    //void drawMap(std::vector<std::vector<Tile<TileID>>> tileMap);
 
 private:
     Resolution resolution;

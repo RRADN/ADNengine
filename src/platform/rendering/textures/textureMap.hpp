@@ -1,10 +1,9 @@
 #pragma once
 
-#include "texture.hpp"
+#include "../../../core/dataTipes/texture.hpp"
 
 #include <unordered_map>
 #include <string>
-#include <stdexcept>
 
 #include <SDL3/SDL_render.h>
 
