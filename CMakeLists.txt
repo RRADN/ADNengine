@@ -32,9 +32,14 @@ add_executable(${PROJECT_NAME}
     #src/core/timer/timer.cpp
     #platform
     src/platform/window/sdlWindow.cpp
+    
     src/platform/events/sdlEvents.cpp
+    src/platform/events/guiEvents.cpp
+    src/platform/events/eventsManager.cpp
+
     src/platform/rendering/renderManager.cpp
     src/platform/rendering/textures/textureManager.cpp
+    src/platform/context/contextManager.cpp
     #entities
     src/entities/primitive/entity.cpp
     #src/entities/ball.cpp
@@ -65,6 +70,7 @@ target_sources(${PROJECT_NAME} PRIVATE
     ${IMGUI_DIR}/imgui_draw.cpp
     ${IMGUI_DIR}/imgui_tables.cpp
     ${IMGUI_DIR}/imgui_widgets.cpp
+    ${IMGUI_DIR}/imgui_demo.cpp
 
     ${IMGUI_DIR}/backends/imgui_impl_sdl3.cpp
     ${IMGUI_DIR}/backends/imgui_impl_sdlrenderer3.cpp

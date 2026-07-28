@@ -1,25 +1,22 @@
 #include "sdlEvents.hpp"
 
-#include <iostream>
-#include <SDL3/SDL_events.h>
-
-Events::Events() {
+sdlEvents::sdlEvents() {
     shouldClose = false;
 }
 
-bool Events::update() {
+bool sdlEvents::update() {
     inputCase();
-    
-    return !shouldClose;
+
+    return shouldClose;
 }
 
 
-void Events::inputCase() {
-    SDL_Event event;
-
-    while (SDL_PollEvent(&event)) {
-        if (event.type == SDL_EVENT_QUIT) {
-            shouldClose = true;
-        }
-    }  
+void sdlEvents::inputCase() {
+    if (event.type == SDL_EVENT_QUIT) {
+        shouldClose = true;
+    }
 }
+
+SDL_Event* sdlEvents::getEvents() {
+    return &event;
+};

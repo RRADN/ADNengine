@@ -3,13 +3,14 @@
 #include <stdexcept>
 
 
-Window::Window( const std::string& title, Resolution resolution) : sdl {} {
-    
+Window::Window( const std::string& title, Resolution resolution) {
+    mainScale = SDL_GetDisplayContentScale(SDL_GetPrimaryDisplay());
+    SDL_WindowFlags windowFlags = SDL_WINDOW_BORDERLESS | SDL_WINDOW_HIDDEN | SDL_WINDOW_HIGH_PIXEL_DENSITY;
     window = SDL_CreateWindow(
         title.c_str(),
         resolution.width,
         resolution.height,
-        SDL_WINDOW_BORDERLESS
+        windowFlags
     );
 
     if (!window)
@@ -26,13 +27,8 @@ Window::Window( const std::string& title, Resolution resolution) : sdl {} {
         throw std::runtime_error(SDL_GetError());
     }
 
-    SDL_SetRenderDrawColor(
-        renderer,
-        0,
-        0,
-        0,
-        0
-    );
+    SDL_SetWindowPosition(window, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED);
+
 }
 
 Window::~Window() {
@@ -41,8 +37,10 @@ Window::~Window() {
 
     if (window)
         SDL_DestroyWindow(window);
+}
 
-    sdl.~Context();
+void Window::show() {
+    SDL_ShowWindow(window);
 }
 
 void Window::clear() {
@@ -55,4 +53,12 @@ void Window::present() {
 
 SDL_Renderer* Window::getRenderer() {
     return renderer;
+}
+
+SDL_Window* Window::getWindow() {
+    return window;
+}
+
+float Window::getScale() {
+    return mainScale;
 }

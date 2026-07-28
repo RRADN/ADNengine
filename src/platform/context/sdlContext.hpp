@@ -2,10 +2,10 @@
 
 #include <SDL3/SDL.h>
 
-class Context
+class sdlContext
 {
 public:
-    Context()
+    sdlContext()
     {
         #ifdef __linux__
             SDL_SetHint(SDL_HINT_VIDEO_DRIVER, "x11");
@@ -14,7 +14,7 @@ public:
         SDL_Init(SDL_INIT_VIDEO);
     }
 
-    ~Context()
+    ~sdlContext()
     {
         SDL_Quit();
     }

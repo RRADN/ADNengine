@@ -3,8 +3,6 @@
 #include <SDL3/SDL.h>
 #include <string>
 
-#include "sdlContext.hpp"
-
 #include "../../core/config/resolution.hpp"
 
 class Window {
@@ -22,17 +20,17 @@ public:
     Window(Window&&) noexcept;
     Window& operator=(Window&&) noexcept;
 
+    void show();
     void clear();
     void present();
 
     SDL_Renderer* getRenderer();
+    SDL_Window* getWindow();
+    float getScale();
 
 private:
     SDL_Window* window = nullptr;
     SDL_Renderer* renderer = nullptr;
 
-    Context sdl;
-
-    int width;
-    int height;
+    float mainScale;
 };
