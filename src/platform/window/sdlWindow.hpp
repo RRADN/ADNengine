@@ -23,6 +23,7 @@ public:
     void show();
     void clear();
     void present();
+    void setColor(float x, float y, float z, float a);
 
     SDL_Renderer* getRenderer();
     SDL_Window* getWindow();

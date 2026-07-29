@@ -1,6 +1,7 @@
 #pragma once
 
 #include "sdlContext.hpp"
+#include "guiContext.hpp"
 
 class Context {
 public:
@@ -8,6 +9,6 @@ public:
     ~Context() = default;
 
 private:
-    sdlContext window {};
-
+    sdlContext window;
+    guiContext gui;
 };

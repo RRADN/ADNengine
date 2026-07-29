@@ -51,6 +51,11 @@ void Window::present() {
     SDL_RenderPresent(renderer);
 }
 
+void Window::setColor(float x, float y, float z, float a) {
+    SDL_SetRenderDrawColorFloat(renderer, x, y, z, a);
+}
+
+
 SDL_Renderer* Window::getRenderer() {
     return renderer;
 }

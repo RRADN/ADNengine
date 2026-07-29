@@ -1,3 +1,3 @@
 #include "contextManager.hpp"
 
-Context::Context() {};
+Context::Context() : window(), gui() {};
