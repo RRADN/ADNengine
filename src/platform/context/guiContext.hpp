@@ -10,13 +10,13 @@ public:
         IMGUI_CHECKVERSION();
         context = ImGui::CreateContext();
         io = &ImGui::GetIO(); (void)io;
+
+        ImGui::StyleColorsDark();
+
         io->ConfigFlags |= ImGuiConfigFlags_NavEnableKeyboard;
         io->ConfigFlags |= ImGuiConfigFlags_DockingEnable;
-  
-        io->Fonts->AddFontFromFileTTF("assets/fonts/Orbitron.ttf");
 
-        
-        
+        //io->Fonts->AddFontFromFileTTF("assets/fonts/Orbitron.ttf");
     }
 
     ~guiContext() { 

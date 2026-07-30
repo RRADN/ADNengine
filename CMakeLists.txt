@@ -40,22 +40,18 @@ add_executable(${PROJECT_NAME}
     src/platform/rendering/renderManager.cpp
     src/platform/rendering/textures/textureManager.cpp
     src/platform/context/contextManager.cpp
+
+    src/platform/gui/guiManager.cpp
+    src/platform/gui/rendering/guiBackend.cpp
+    src/platform/gui/rendering/guiRender.cpp
+    src/platform/gui/styles/guiStyle.cpp
+    src/platform/gui/windows/windowsManager.cpp
     #entities
     src/entities/primitive/entity.cpp
-    #src/entities/ball.cpp
-    #src/entities/paddle.cpp
-    #maps
-    #src/map/tileMap.cpp
-    #logic collisions
+    
     src/logic/systems/collisions/collision.cpp
     src/logic/systems/collisions/collisionManager.cpp
-    #logic movement     
-    #src/logic/systems/movements/playerMovement.cpp
-    #src/logic/systems/movements/movement.cpp
-    #logic health
-    #src/logic/systems/health.cpp
-    #logic score
-    #src/logic/systems/score.cpp
+    
     #input logic
     src/logic/input/inputManager.cpp
     src/logic/input/keysManager.cpp
