@@ -1,6 +1,6 @@
 #pragma once
 
-#include "inputs.hpp"
+#include "../../core/dataTipes/inputs.hpp"
 #include "keysManager.hpp"
 
 class Input {

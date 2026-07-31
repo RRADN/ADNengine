@@ -4,7 +4,7 @@
 
 #include "textures/textureManager.hpp"
 
-#include "../../logic/input/inputs.hpp"
+#include "../../core/dataTipes/inputs.hpp"
 
 #include "../../core/config/resolution.hpp"
 

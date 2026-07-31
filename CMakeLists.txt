@@ -26,29 +26,38 @@ elseif(CMAKE_SYSTEM_NAME STREQUAL "Windows")
 endif()
 
 add_executable(${PROJECT_NAME}
-    #
+    #app
     src/main.cpp
+    src/app/app.cpp
 
     #src/core/timer/timer.cpp
-    #platform
+    
+    #window
     src/platform/window/sdlWindow.cpp
     
+    #events
     src/platform/events/sdlEvents.cpp
     src/platform/events/guiEvents.cpp
     src/platform/events/eventsManager.cpp
 
+    #rendering
     src/platform/rendering/renderManager.cpp
     src/platform/rendering/textures/textureManager.cpp
+
+    #context
     src/platform/context/contextManager.cpp
 
+    #gui
     src/platform/gui/guiManager.cpp
     src/platform/gui/rendering/guiBackend.cpp
     src/platform/gui/rendering/guiRender.cpp
     src/platform/gui/styles/guiStyle.cpp
     src/platform/gui/windows/windowsManager.cpp
+    
     #entities
     src/entities/primitive/entity.cpp
     
+    #collision
     src/logic/systems/collisions/collision.cpp
     src/logic/systems/collisions/collisionManager.cpp
     
