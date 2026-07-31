@@ -3,11 +3,9 @@
 #include "platform/context/contextManager.hpp"
 #include "platform/window/sdlWindow.hpp"
 #include "platform/events/eventsManager.hpp"
-
 #include "platform/gui/guiManager.hpp"
 
-int main()
-{
+int main() {
     bool done = false;
 
     Context context {};
@@ -20,9 +18,7 @@ int main()
     
     window.show();
 
-    while (!done)
-    {
-
+    while (!done) {
         done = events.update();
 
         window.clear();

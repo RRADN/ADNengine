@@ -2,9 +2,8 @@
 
 
 
-GUI::GUI(SDL_Window* window, SDL_Renderer* renderer, float scale) : scale(scale),
-            window(window),
-            renderer(renderer), 
+GUI::GUI(SDL_Window* window, SDL_Renderer* renderer, float scale) : 
+            scale(scale),
             guiRender(*window, *renderer),
             guiStyle(scale)  {}
 
@@ -20,6 +19,11 @@ void GUI::newframe() {
 
 void GUI::procesgui() {
     guiWindow.createDockspace();
+    guiWindow.createToolbar();
+    guiWindow.createHierarchy();
+    guiWindow.createScene();
+    guiWindow.createInspector();
+    guiWindow.createConsole();
 }
 
 void GUI::render() {

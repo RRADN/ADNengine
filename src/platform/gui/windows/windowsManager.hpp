@@ -4,12 +4,13 @@
 
 class GUIWindow {
 public:
-    GUIWindow() {};
+    GUIWindow();
     ~GUIWindow() = default;
 
-    void createDockspace(){
-        ImGui::DockSpaceOverViewport(0, ImGui::GetMainViewport());
-    }
-
-    
+    void createDockspace();
+    void createToolbar();
+    void createHierarchy();
+    void createScene();
+    void createInspector();
+    void createConsole();
 };

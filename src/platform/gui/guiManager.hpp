@@ -19,10 +19,6 @@ private:
     void procesgui();
     void render();
 
-    SDL_Renderer* renderer;
-
-    SDL_Window* window;
-
     float  scale;
 
     GUIStyle guiStyle;
