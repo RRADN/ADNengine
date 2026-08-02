@@ -56,16 +56,7 @@ void GUIWindow::createHierarchy() {
 }
 
 void GUIWindow::createScene() {
-    ImGui::Begin("Scene");
-
-    ImVec2 size = ImGui::GetContentRegionAvail();
-
-    ImGui::InvisibleButton("SceneViewport", size);
-
-    // Después aquí dibujarás la textura del renderer:
-    // ImGui::Image(texture, size);
-
-    ImGui::End();
+    scene.createScene();
 }
 
 void GUIWindow::createInspector() {
@@ -105,4 +96,8 @@ void GUIWindow::createConsole() {
     }
 
     ImGui::End();
+}
+
+void GUIWindow::setupScene(Viewport& viewport) {
+    scene.setupScene(viewport);
 }

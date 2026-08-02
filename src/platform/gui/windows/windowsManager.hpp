@@ -2,6 +2,8 @@
 
 #include "imgui.h"
 
+#include "scene.hpp"
+
 class GUIWindow {
 public:
     GUIWindow();
@@ -13,4 +15,9 @@ public:
     void createScene();
     void createInspector();
     void createConsole();
+
+    void setupScene(Viewport& viewport);
+
+private:
+    Scene scene {};
 };

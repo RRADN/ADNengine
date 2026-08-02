@@ -1,6 +1,8 @@
 #include "app.hpp"
 
-ADN_ENGINE::ADN_ENGINE() {}
+ADN_ENGINE::ADN_ENGINE() {
+    gui.setupScene({});
+}
 
 void ADN_ENGINE::run(){
     window.show();

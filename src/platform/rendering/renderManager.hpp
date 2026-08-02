@@ -6,20 +6,20 @@
 
 #include "../../core/dataTipes/inputs.hpp"
 
-#include "../../core/config/resolution.hpp"
+#include "../../core/dataTipes/resolution.hpp"
 
 #include "../../core/dataTipes/rect.hpp"
 
 class Render{
 public:
-    Render(SDL_Renderer& renderer, SystemInputs& inputs, Resolution resolution);
+    Render(SDL_Renderer& renderer, SystemInputs& inputs);
     ~Render() = default;
 
     void draw(TexturesID id, const Rect& rect);
     void draw(ScreensID id);
 
+    
 private:
-    Resolution resolution;
 
     SystemInputs* inputs;
 

@@ -3,7 +3,7 @@
 #include <SDL3/SDL.h>
 #include <string>
 
-#include "../../core/config/resolution.hpp"
+#include "../../core/dataTipes/resolution.hpp"
 
 class Window {
 public:

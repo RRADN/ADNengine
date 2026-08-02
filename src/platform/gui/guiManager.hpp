@@ -12,6 +12,8 @@ public:
     GUI(SDL_Window* window, SDL_Renderer* renderer, float scale);
     ~GUI() = default;
 
+    void setupScene(Viewport& viewport);
+
     void update();
 
 private:

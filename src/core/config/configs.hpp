@@ -1,8 +1,8 @@
 #pragma once 
 
-#include "resolution.hpp"
+#include "../dataTipes/resolution.hpp"
 
-struct configs {
+struct Configs {
 
     //resolutions
     Resolution HD  {1280, 720 };

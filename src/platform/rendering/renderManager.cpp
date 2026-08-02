@@ -1,9 +1,8 @@
 #include "renderManager.hpp"
 
-Render::Render(SDL_Renderer& renderer, SystemInputs& inputs, Resolution resolution) : textures{renderer} {
+Render::Render(SDL_Renderer& renderer, SystemInputs& inputs) : textures{renderer} {
     this->renderer = &renderer;
     this->inputs = &inputs;
-    this->resolution = resolution;
 }
 
 void Render::draw(TexturesID id, const Rect& rect) {
@@ -15,7 +14,7 @@ void Render::draw(TexturesID id, const Rect& rect) {
 }
 
 void Render::draw(ScreensID id) {
-    SDL_FRect destRect {0.0f, 0.0f, resolution.width, resolution.height};
+    SDL_FRect destRect {0.0f, 0.0f, 1920, 1080};
     SDL_RenderTexture(renderer, textures.screens.getTexure(id), nullptr, &destRect);
     if (inputs->debuging) {
        SDL_RenderTexture(renderer, textures.screens.getTexure(id), nullptr, &destRect);

@@ -1,11 +1,13 @@
 #include "guiManager.hpp"
 
-
-
 GUI::GUI(SDL_Window* window, SDL_Renderer* renderer, float scale) : 
             scale(scale),
             guiRender(*window, *renderer),
             guiStyle(scale)  {}
+
+void GUI::setupScene(Viewport& viewport) {
+    guiWindow.setupScene(viewport);
+}
 
 void GUI::update() {
     newframe();
