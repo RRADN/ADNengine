@@ -3,6 +3,8 @@
 Render::Render(SDL_Renderer& renderer, SystemInputs& inputs) : textures{renderer} {
     this->renderer = &renderer;
     this->inputs = &inputs;
+
+    SDL_SetRenderTarget(&renderer, textures.viewport->texture);
 }
 
 void Render::draw(TexturesID id, const Rect& rect) {

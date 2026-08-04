@@ -10,10 +10,14 @@
 #include "../../../core/paths/texturesPath.hpp"
 #include "../../../core/paths/screensPath.hpp"
 
+#include "../../../core/dataTipes/viewPort.hpp"
+
 class TextureManager {
 public:
     TextureManager(SDL_Renderer& renderer);
     ~TextureManager() = default;
+
+    Viewport* viewport;
     
     TextureMap<TexturesID> textures;
     TextureMap<ScreensID> screens; 

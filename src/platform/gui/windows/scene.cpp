@@ -11,8 +11,7 @@ void Scene::createScene() {
 
     ImGui::InvisibleButton("SceneViewport", size);
 
-    // Después aquí dibujarás la textura del renderer:
-    // ImGui::Image(texture, size);
+    ImGui::Image(viewport->texture, {viewport->windowResolution.width, viewport->windowResolution.height});
 
     ImGui::End();
 }

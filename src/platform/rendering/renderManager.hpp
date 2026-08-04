@@ -4,6 +4,8 @@
 
 #include "textures/textureManager.hpp"
 
+#include "../../core/dataTipes/viewPort.hpp"
+
 #include "../../core/dataTipes/inputs.hpp"
 
 #include "../../core/dataTipes/resolution.hpp"
@@ -20,7 +22,6 @@ public:
 
     
 private:
-
     SystemInputs* inputs;
 
     SDL_Renderer* renderer;

@@ -14,4 +14,5 @@ public:
     void setupScene(Viewport& viewport);
 private:
     
+    Viewport* viewport;
 };
