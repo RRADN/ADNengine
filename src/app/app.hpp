@@ -22,7 +22,7 @@ private:
 
     Input input {};
 
-    Viewport viewport {nullptr, configs.HD, configs.HD};
+    Viewport viewport {nullptr, configs.HD, configs.HD, 16.0f / 9.0f};
 
     bool done;
 

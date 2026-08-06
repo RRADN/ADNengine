@@ -13,6 +13,8 @@ public:
     
     void setupScene(Viewport& viewport);
 private:
-    
+
+    void verifySize(); 
+
     Viewport* viewport;
 };

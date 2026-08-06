@@ -30,5 +30,7 @@ void ADN_ENGINE::render() {
 
     renderer.draw(ScreensID::Adn_black);
 
+    renderer.draw(TexturesID::No_texture, {100,100,100,100});
+
     renderer.setDefaultTarget();
 }

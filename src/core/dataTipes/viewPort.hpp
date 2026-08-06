@@ -9,5 +9,6 @@ struct Viewport {
 
     Resolution windowResolution;
     Resolution renderResolution;
-    
+
+    float proportion;
 };
