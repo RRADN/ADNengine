@@ -14,10 +14,10 @@
 
 class TextureManager {
 public:
-    TextureManager(SDL_Renderer& renderer);
-    ~TextureManager() = default;
+    TextureManager(SDL_Renderer* renderer);
+    ~TextureManager();
 
-    Viewport* viewport;
+    SDL_Texture* viewportTexture;
     
     TextureMap<TexturesID> textures;
     TextureMap<ScreensID> screens; 

@@ -1,10 +1,17 @@
 #include "renderManager.hpp"
 
-Render::Render(SDL_Renderer& renderer, SystemInputs& inputs) : textures{renderer} {
-    this->renderer = &renderer;
+Render::Render(SDL_Renderer* renderer, SystemInputs& inputs) : textures{renderer} {
+    this->renderer = renderer;
     this->inputs = &inputs;
 
-    SDL_SetRenderTarget(&renderer, textures.viewport->texture);
+}
+
+void Render::setRenderTarget(){
+    SDL_SetRenderTarget(renderer, textures.viewportTexture);
+}
+
+void Render::setDefaultTarget() {
+    SDL_SetRenderTarget(renderer, nullptr); 
 }
 
 void Render::draw(TexturesID id, const Rect& rect) {
@@ -21,4 +28,8 @@ void Render::draw(ScreensID id) {
     if (inputs->debuging) {
        SDL_RenderTexture(renderer, textures.screens.getTexure(id), nullptr, &destRect);
     }
+}
+
+SDL_Texture* Render::getViewportTexture() {
+    return textures.viewportTexture;
 }

@@ -22,15 +22,18 @@ private:
 
     Input input {};
 
+    Viewport viewport {nullptr, configs.HD, configs.HD};
+
     bool done;
 
     void update();
+    void render();
 
     Context context {};
 
-    Window window {"hola", {1280, 720}};
+    Window window {"ADN_ENGINE", viewport.windowResolution};
 
-    Render renderer {*window.getRenderer(), input.getSystemInputs()};
+    Render renderer {window.getRenderer(), input.getSystemInputs()};
 
     GUI gui {window.getWindow(), window.getRenderer(), window.getScale()};
 

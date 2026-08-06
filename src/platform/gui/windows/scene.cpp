@@ -9,13 +9,14 @@ void Scene::createScene() {
 
     ImVec2 size = ImGui::GetContentRegionAvail();
 
-    ImGui::InvisibleButton("SceneViewport", size);
+    viewport->renderResolution.height = size.y;
+    viewport->renderResolution.width = size.x;
 
-    ImGui::Image(viewport->texture, {viewport->windowResolution.width, viewport->windowResolution.height});
+    ImGui::Image(viewport->texture, size);
 
     ImGui::End();
 }
 
 void Scene::setupScene(Viewport& viewport) {
-
+    this->viewport = &viewport; 
 }
