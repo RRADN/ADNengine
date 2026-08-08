@@ -60,27 +60,7 @@ void GUIWindow::createScene() {
 }
 
 void GUIWindow::createInspector() {
-    ImGui::Begin("Inspector");
-
-    ImGui::Text("Selected Entity");
-
-    static char name[64] = "Player";
-
-    ImGui::InputText("Name", name, sizeof(name));
-
-    static float position[2]{0.0f,0.0f};
-
-    ImGui::DragFloat2("Position", position);
-
-    static float rotation = 0.0f;
-
-    ImGui::DragFloat("Rotation",&rotation);
-
-    static float scale[2]{1.0f,1.0f};
-
-    ImGui::DragFloat2("Scale", scale);
-
-    ImGui::End();
+    inspectror.createInspector();
 }
 
 void GUIWindow::createConsole() {
@@ -100,4 +80,8 @@ void GUIWindow::createConsole() {
 
 void GUIWindow::setupScene(Viewport& viewport) {
     scene.setupScene(viewport);
+}
+
+void GUIWindow::setRect(Rect& rect) {
+    inspectror.setRect(rect);
 }

@@ -1,6 +1,6 @@
 #include "entity.hpp"
 
-Entity::Entity(): collision({0.0f,0.0f,0.0f,0.0f}), id(TexturesID::No_texture){
+Entity::Entity(): collision({0.0f,0.0f,1.0f,1.0f}), id(TexturesID::No_texture){
     
 }
 
@@ -16,7 +16,7 @@ const TexturesID Entity::getID() {
     return id;
 }
 
-const Rect Entity::getRect() {
+Rect& Entity::getRect() {
     return collision.getRect();
 }
 

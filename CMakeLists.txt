@@ -56,6 +56,7 @@ add_executable(${PROJECT_NAME}
     
     #gui Windows
     src/platform/gui/windows/scene.cpp
+    src/platform/gui/windows/inspector.cpp
 
     #entities
     src/entities/primitive/entity.cpp

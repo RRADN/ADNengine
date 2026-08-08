@@ -14,7 +14,7 @@ public:
     float getWidth() const { return rect.width; }
     float getHeight() const { return rect.height; }
 
-    const Rect getRect();
+    Rect &getRect();
 
     void setXY(float x, float y);
     void setX(float x);

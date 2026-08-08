@@ -13,6 +13,7 @@ public:
     ~GUI() = default;
 
     void setupScene(Viewport& viewport);
+    void setRect(Rect& rect);
 
     void update();
 
@@ -24,6 +25,6 @@ private:
     float  scale;
 
     GUIStyle guiStyle;
-    GUIRender guiRender;
+    GUIRender guiRender; 
     GUIWindow guiWindow {};
 };

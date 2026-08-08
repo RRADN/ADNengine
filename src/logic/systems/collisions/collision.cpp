@@ -9,7 +9,7 @@ Collision::Collision(float x, float y, float width, float height) {
     this->rect.height = height;
 }
 
-const Rect Collision::getRect() {
+Rect &Collision::getRect() {
     return rect;
 }
 

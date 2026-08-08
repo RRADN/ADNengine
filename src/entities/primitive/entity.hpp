@@ -11,7 +11,7 @@ public:
     Entity(Collision collision, TexturesID id);
     ~Entity() = default;
 
-    const Rect getRect();
+    Rect& getRect();
     const TexturesID getID();
     Collision* getCollision();
 

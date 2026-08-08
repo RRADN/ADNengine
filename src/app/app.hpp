@@ -10,6 +10,8 @@
 
 #include "../logic/input/inputManager.hpp"
 
+#include "../entities/primitive/entity.hpp"
+
 class ADN_ENGINE {
 public:
     ADN_ENGINE();
@@ -38,4 +40,6 @@ private:
     GUI gui {window.getWindow(), window.getRenderer(), window.getScale()};
 
     Events events {};
+
+    Entity entity {};
 };

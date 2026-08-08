@@ -17,7 +17,7 @@ public:
     Render(SDL_Renderer* renderer, SystemInputs& inputs);
     ~Render() = default;
 
-    void draw(TexturesID id, const Rect& rect);
+    void draw(TexturesID id, Rect rect);
     void draw(ScreensID id);
 
     void setRenderTarget();

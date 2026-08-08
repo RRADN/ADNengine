@@ -9,6 +9,10 @@ void GUI::setupScene(Viewport& viewport) {
     guiWindow.setupScene(viewport);
 }
 
+void GUI::setRect(Rect& rect) {
+    guiWindow.setRect(rect);
+}
+
 void GUI::update() {
     newframe();
     procesgui();

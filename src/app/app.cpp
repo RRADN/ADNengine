@@ -3,6 +3,7 @@
 ADN_ENGINE::ADN_ENGINE() {
     viewport.texture = renderer.getViewportTexture();
     gui.setupScene(viewport);
+    gui.setRect(entity.getRect());
 }
 
 void ADN_ENGINE::run(){
@@ -21,6 +22,7 @@ void ADN_ENGINE::run(){
 void ADN_ENGINE::update() {
     done = events.update();
 
+    input.update();
     gui.update();
 
 }
@@ -30,7 +32,7 @@ void ADN_ENGINE::render() {
 
     renderer.draw(ScreensID::Adn_black);
 
-    renderer.draw(TexturesID::No_texture, {100,100,100,100});
+    renderer.draw(entity.getID(), entity.getRect());
 
     renderer.setDefaultTarget();
 }

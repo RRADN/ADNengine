@@ -2,8 +2,6 @@
 
 #include "../../../core/dataTipes/viewPort.hpp"
 
-#include "../../../core/dataTipes/viewPort.hpp"
-
 class Scene {
 public:
     Scene();

@@ -14,7 +14,9 @@ void Render::setDefaultTarget() {
     SDL_SetRenderTarget(renderer, nullptr); 
 }
 
-void Render::draw(TexturesID id, const Rect& rect) {
+void Render::draw(TexturesID id, Rect rect) {
+    rect.width *= 100;
+    rect.height *= 100;
     SDL_FRect destRect = {rect.x, rect.y, rect.width, rect.height};
     SDL_RenderTexture(renderer, textures.textures.getTexure(id), nullptr, &destRect);
     if (inputs->debuging) {

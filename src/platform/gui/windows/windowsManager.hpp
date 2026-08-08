@@ -3,6 +3,7 @@
 #include "imgui.h"
 
 #include "scene.hpp"
+#include "inspector.hpp"
 
 class GUIWindow {
 public:
@@ -17,7 +18,8 @@ public:
     void createConsole();
 
     void setupScene(Viewport& viewport);
-
+    void setRect(Rect& rect);
 private:
     Scene scene {};
+    Inspector inspectror {};
 };
